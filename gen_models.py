@@ -27,7 +27,7 @@ for model, max_depth, n_bits, n_features in product(models, max_depths, n_bits, 
     tic = time.perf_counter()
     model.fit(X,y)
     toc = time.perf_counter()
-    traint_time = toc - tic
+    train_time = toc - tic
     print(f"Training time: {train_time}")
     tic = time.perf_counter()
     model.compile(X_train)
@@ -46,7 +46,7 @@ for model, max_depth, n_bits, n_features in product(models, max_depths, n_bits, 
     print(f"Accuracy: {acc}")
     new_row = {"model": model, "max_depth": max_depth, "n_bits": n_bits, 
                 "n_features": n_features, 
-                "training_time": traint_time, 
+                "training_time": train_time, 
                "compilation_time": compilation_time, 
                "prediction_time": prediction_time, 
                "accuracy": acc}
