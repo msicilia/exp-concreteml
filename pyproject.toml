@@ -1,0 +1,12 @@
+[project]
+name = "exp-concreteml"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "concrete-ml>=1.8.0",
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.1",
+    "pandas>=2.0.3",
+]

@@ -1,0 +1,19 @@
+,model,max_depth,n_bits,n_features,training_time,compilation_time,prediction_time,accuracy
+0,"DecisionTreeClassifier(max_depth=3, n_bits={'op_inputs': 6, 'op_leaves': 6})",3,2,5,44.76670587499393,44.76670587499393,44.76670587499393,0.904
+1,"DecisionTreeClassifier(max_depth=3, n_bits={'op_inputs': 6, 'op_leaves': 6})",3,2,6,50.29634108400205,50.29634108400205,50.29634108400205,0.892
+2,"DecisionTreeClassifier(max_depth=3, n_bits={'op_inputs': 6, 'op_leaves': 6})",3,2,7,44.53199404198676,44.53199404198676,44.53199404198676,0.872
+3,"DecisionTreeClassifier(max_depth=3, n_bits={'op_inputs': 6, 'op_leaves': 6})",3,3,5,44.80271429201821,44.80271429201821,44.80271429201821,0.904
+4,"DecisionTreeClassifier(max_depth=3, n_bits={'op_inputs': 6, 'op_leaves': 6})",3,3,6,45.02959795796778,45.02959795796778,45.02959795796778,0.892
+5,"DecisionTreeClassifier(max_depth=3, n_bits={'op_inputs': 6, 'op_leaves': 6})",3,3,7,44.983976749994326,44.983976749994326,44.983976749994326,0.872
+6,"DecisionTreeClassifier(max_depth=4, n_bits={'op_inputs': 6, 'op_leaves': 6})",4,2,5,76.69466545799514,76.69466545799514,76.69466545799514,0.932
+7,"DecisionTreeClassifier(max_depth=4, n_bits={'op_inputs': 6, 'op_leaves': 6})",4,2,6,75.57891845901031,75.57891845901031,75.57891845901031,0.916
+8,"DecisionTreeClassifier(max_depth=4, n_bits={'op_inputs': 6, 'op_leaves': 6})",4,2,7,74.53883179096738,74.53883179096738,74.53883179096738,0.912
+9,"DecisionTreeClassifier(max_depth=4, n_bits={'op_inputs': 6, 'op_leaves': 6})",4,3,5,77.07091925002169,77.07091925002169,77.07091925002169,0.932
+10,"DecisionTreeClassifier(max_depth=4, n_bits={'op_inputs': 6, 'op_leaves': 6})",4,3,6,74.52150700002676,74.52150700002676,74.52150700002676,0.916
+11,"DecisionTreeClassifier(max_depth=4, n_bits={'op_inputs': 6, 'op_leaves': 6})",4,3,7,75.5539428750053,75.5539428750053,75.5539428750053,0.912
+12,"DecisionTreeClassifier(max_depth=5, n_bits={'op_inputs': 6, 'op_leaves': 6})",5,2,5,118.0550379169872,118.0550379169872,118.0550379169872,0.928
+13,"DecisionTreeClassifier(max_depth=5, n_bits={'op_inputs': 6, 'op_leaves': 6})",5,2,6,97.4700402499875,97.4700402499875,97.4700402499875,0.924
+14,"DecisionTreeClassifier(max_depth=5, n_bits={'op_inputs': 6, 'op_leaves': 6})",5,2,7,118.41768595902249,118.41768595902249,118.41768595902249,0.92
+15,"DecisionTreeClassifier(max_depth=5, n_bits={'op_inputs': 6, 'op_leaves': 6})",5,3,5,119.80841004202375,119.80841004202375,119.80841004202375,0.928
+16,"DecisionTreeClassifier(max_depth=5, n_bits={'op_inputs': 6, 'op_leaves': 6})",5,3,6,108.86645024997415,108.86645024997415,108.86645024997415,0.924
+17,"DecisionTreeClassifier(max_depth=5, n_bits={'op_inputs': 6, 'op_leaves': 6})",5,3,7,120.34166820900282,120.34166820900282,120.34166820900282,0.92
