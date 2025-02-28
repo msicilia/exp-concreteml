@@ -11,11 +11,10 @@ import time
 import pandas as pd
 
 
-
 models = ["DecisionTreeClassifier"]# , "RandomForestClassifier"]
 max_depths = range(3, 6)
 n_bits = range(2, 4)
-n_features = range(5, 8 )
+n_features = range(5, 8)
  
 stats = pd.DataFrame(columns=["model", "max_depth", "n_bits", "n_features", "training_time", "compilation_time", "prediction_time", "accuracy"])    
 for model, max_depth, n_bits, n_features in product(models, max_depths, n_bits, n_features):
