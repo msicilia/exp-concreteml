@@ -1,6 +1,6 @@
 
 MODELS_DIR = "./pickle_field"
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, f1_score
 from concrete.ml.sklearn import DecisionTreeClassifier as FHEDecisionTreeClassifier, RandomForestClassifier as FHERandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -58,13 +58,14 @@ def experiment(modelname: str):
         #    pickle.dump(model, f) 
         print(f"model name: {model}, max_depth: {max_depth}, n_bits: {n_bits}, n_features: {n_features}")
         acc = accuracy_score(y_test, y_pred)
-        print(f"Accuracy: {acc}")
+        f1 = f1_score(y_test, y_pred)
+        print(f"Accuracy: {acc}, F1: {f1}")
         new_row = {"model": modelname, "max_depth": max_depth, "n_bits": n_bits, 
                     "n_features": n_features, 
                     "training_time": train_time, 
                 "compilation_time": compilation_time, 
                 "prediction_time": prediction_time, 
-                "accuracy": acc}
+                "accuracy": acc, "f1": f1}
         stats = pd.concat([stats, pd.DataFrame([new_row])], ignore_index=True)
         stats.to_csv(f"stats_{modelname}.csv")
 
