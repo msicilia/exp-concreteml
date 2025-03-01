@@ -13,10 +13,6 @@ import time
 import pandas as pd
 from multiprocessing import Pool
 
-
-
-# models = ["DecisionTreeClassifier"] #  "DecisionTreeClassifier"]
-
  
 def experiment(modelname: str):
     max_depths = range(3, 20)
@@ -46,6 +42,8 @@ def experiment(modelname: str):
             toc = time.perf_counter()
             compilation_time = toc - tic
             print(f"Compilation time: {compilation_time}")
+        else:
+            compilation_time = 0
 
         tic = time.perf_counter()
         if modelname.startswith("FHE"):
