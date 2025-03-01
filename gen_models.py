@@ -16,7 +16,7 @@ from multiprocessing import Pool
 # models = ["DecisionTreeClassifier"] #  "DecisionTreeClassifier"]
 
  
-def experiment(model: str):
+def experiment(modelname: str):
     max_depths = range(3, 20)
     n_bits = range(2, 15)
     n_features = range(5, 20)
@@ -24,9 +24,9 @@ def experiment(model: str):
     for max_depth, n_bits, n_features in product(max_depths, n_bits, n_features):
         X, y = make_classification(random_state=42, n_features=n_features, n_samples=1_000)
         X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
-        if model == "DecisionTreeClassifier":
+        if modelname == "DecisionTreeClassifier":
             model = DecisionTreeClassifier(max_depth=max_depth, n_bits=n_bits)
-        elif model == "RandomForestClassifier":
+        elif modelname == "RandomForestClassifier":
             model = RandomForestClassifier(n_estimators=10, max_depth=max_depth, n_bits=n_bits)
         tic = time.perf_counter()
         model.fit(X,y)
@@ -55,7 +55,7 @@ def experiment(model: str):
                 "prediction_time": prediction_time, 
                 "accuracy": acc}
         stats = pd.concat([stats, pd.DataFrame([new_row])], ignore_index=True)
-        stats.to_csv("stats_dt.csv")
+        stats.to_csv(f"stats_{modelname}.csv")
 
 
 if __name__ == '__main__':
