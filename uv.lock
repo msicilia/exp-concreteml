@@ -373,6 +373,7 @@ dependencies = [
     { name = "ipykernel" },
     { name = "matplotlib" },
     { name = "pandas" },
+    { name = "pyyaml" },
 ]
 
 [package.metadata]
@@ -381,6 +382,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "matplotlib", specifier = ">=3.10.1" },
     { name = "pandas", specifier = ">=2.0.3" },
+    { name = "pyyaml", specifier = ">=6.0.2" },
 ]
 
 [[package]]
